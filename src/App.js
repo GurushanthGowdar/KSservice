@@ -1,7 +1,7 @@
 function App() {
   return (
-    <div>
-      <h1>MAHADEVA</h1>
+    <div className="">
+      <h1 className="mt-3 ml-10 font-bold text-4xl">MAHADEVA</h1>
     </div>
   );
 }
