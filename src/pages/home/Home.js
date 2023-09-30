@@ -1,28 +1,24 @@
-import React from 'react'
-import Header from '../../components/header/Header'
-import About from '../about/About'
-import Service from '../service/Service'
-import Career from '../career/Career'
-import Training from '../training/Training'
-import Contact from '../contact/Contact'
+import React from "react";
+import Header from "../../components/header/Header";
+import About from "../about/About";
+import Service from "../service/Service";
+import Career from "../career/Career";
+import Training from "../training/Training";
+import Contact from "../contact/Contact";
+import Hero from "../../Hero/Hero";
 
 const Home = () => {
-    return (
-        <div>
-            <Header />
-            <div className="bg-home-main w-full flex items-center justify-center" style={{ height: '495px' }}>
-                <h1>
-                    Hero section(video/sliding window pics)
-                </h1>
+  return (
+    <div>
+      <Header />
+      <Hero></Hero>
+      <About />
+      <Service />
+      <Career />
+      <Training />
+      <Contact />
+    </div>
+  );
+};
 
-            </div>
-            <About />
-            <Service />
-            <Career />
-            <Training />
-            <Contact />
-        </div>
-    )
-}
-
-export default Home
+export default Home;
