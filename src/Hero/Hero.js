@@ -5,13 +5,12 @@ const Hero = () => {
   // const [imageId, setImageId] = useState(0);
   const [showButton, setShowButton] = useState(false);
 
-
   const mouseEnterHandler = () => {
-    setShowButton(true)
+    setShowButton(true);
   };
 
   const mouseLeaveHandler = () => {
-    setShowButton(false)
+    setShowButton(false);
   };
 
   let slides = [
@@ -36,7 +35,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       // setImageId((prev) => {
-      nextSlide()
+      nextSlide();
       // });
     }, 6000);
     return () => {
@@ -45,10 +44,11 @@ const Hero = () => {
   }, [current]);
 
   return (
-    <div className="w-full h-[70vh]  m-auto "
-
+    <div
+      className="w-full h-[70vh]  m-auto "
       onMouseEnter={mouseEnterHandler}
-      onMouseLeave={mouseLeaveHandler}>
+      onMouseLeave={mouseLeaveHandler}
+    >
       <div className="overflow-hidden relative h-full">
         <div
           className={`flex transition ease-out duration-500`}
@@ -57,44 +57,76 @@ const Hero = () => {
           }}
         >
           {slides.map((s) => {
-            return <img src={s} />;
+            return <img src={s} key={s} />;
           })}
         </div>
-        {showButton &&
+        {showButton && (
           <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-10 text-3xl">
-            <button className="rounded-full p-2 " style={{ color: 'black', background: 'white' }} onClick={previousSlide}>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            <button
+              className="rounded-full p-2 "
+              style={{ color: "black", background: "white" }}
+              onClick={previousSlide}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                />
               </svg>
-
             </button>
-            <button className="rounded-full p-2 " style={{ color: 'black', background: 'white' }} onClick={nextSlide}>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            <button
+              className="rounded-full p-2 "
+              style={{ color: "black", background: "white" }}
+              onClick={nextSlide}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
               </svg>
-
             </button>
-          </div>}
+          </div>
+        )}
 
-        {showButton && <div className="absolute bottom-0 py-4 flex justify-center items-center gap-3 w-full">
-          {slides.map((s, i) => {
-            return (
-              <div
-                onClick={() => {
-                  setCurrent(i);
-                }}
-                key={"circle" + i}
-                className={`rounded-full cursor-pointer ${i == current ? 'w-5  h-5' : 'w-2 h-2'}`}
-                style={{
-                  background: i == current ? "white" : "gray"
-                }}
-              ></div>
-            );
-          })}
-        </div>}
+        {showButton && (
+          <div className="absolute bottom-0 py-4 flex justify-center items-center gap-3 w-full">
+            {slides.map((s, i) => {
+              return (
+                <div
+                  onClick={() => {
+                    setCurrent(i);
+                  }}
+                  key={"circle" + i}
+                  className={`rounded-full cursor-pointer ${
+                    i == current ? "w-5  h-5" : "w-2 h-2"
+                  }`}
+                  style={{
+                    background: i == current ? "white" : "gray",
+                  }}
+                ></div>
+              );
+            })}
+          </div>
+        )}
       </div>
-    </div >
-
+    </div>
   );
 };
 
