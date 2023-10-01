@@ -56,11 +56,11 @@ const Training = () => {
             return (
               <div
                 key={item.id}
-                className="flex flex-col w-52 space-y-4 flex-1 xs:justify-center xs:items-center  xs:mb-10"
+                className="flex flex-col mb-10 items-center w-52 space-y-4 flex-1 xs:justify-center xs:items-center  xs:mb-10"
                 data-aos="zoom-in"
                 data-aos-duration="2000"
               >
-                <p className="text-3xl font-bold text-themeColor-secondary text-center mt-10 xs:text-lg">
+                <p className="text-2xl font-bold text-themeColor-secondary text-center mt-10 xs:text-lg">
                   {item?.title}
                 </p>
                 <img
@@ -68,7 +68,7 @@ const Training = () => {
                   alt="..."
                   style={{ width: "174px", height: "178px" }}
                 />
-                <p className="text-center text-s xs:text-xs">{item?.description}</p>
+                <p className="text-center w-1/2 text-sm xs:text-xs xs:w-full">{item?.description}</p>
               </div>
             );
           })}
