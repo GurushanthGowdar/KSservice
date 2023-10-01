@@ -54,7 +54,12 @@ const Training = () => {
         <div className="flex justify-around mt-10">
           {data?.map((item) => {
             return (
-              <div key={item.id} className="flex flex-col w-52 space-y-4">
+              <div
+                key={item.id}
+                className="flex flex-col w-52 space-y-4"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
                 <p className="text-3xl font-bold text-themeColor-secondary text-center mt-10">
                   {item?.title}
                 </p>

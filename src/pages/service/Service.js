@@ -1,5 +1,6 @@
 import React from "react";
 import img1 from "../../Image/service/entertainment and hospitality 1.png";
+import img3 from "../../Image/service/img3.jpg";
 import ServiceImageCard from "./ServiceImageCard";
 
 // import imgg from "./img1.png"
@@ -11,7 +12,7 @@ const Service = () => {
     },
     {
       id: 2,
-      src: img1,
+      src: img3,
     },
     {
       id: 3,
@@ -55,7 +56,7 @@ const Service = () => {
     },
   ];
   return (
-    <div className=" bg-services-main mt-10">
+    <div className=" bg-services-main mt-10 pb-10">
       <div className=" flex  justif-center flex-col items-center mt-2.5 w-full space-y-11 ">
         <div className="w-3/4 flex flex-col items-center">
           <p className=" text-3xl font-bold text-themeColor-secondary mt-5">

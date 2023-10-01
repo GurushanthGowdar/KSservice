@@ -1,0 +1,9 @@
+.service-card {
+  transition: all 0.3s ease; /* Smooth transition for all properties with a duration of 0.3 seconds */
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Scale the card slightly when hovered */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Apply a shadow */
+  z-index: 1; /* Bring the card to the top */
+}

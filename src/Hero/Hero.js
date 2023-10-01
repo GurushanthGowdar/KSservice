@@ -52,12 +52,21 @@ const Hero = () => {
       <div className="overflow-hidden relative h-full">
         <div
           className={`flex transition ease-out duration-500`}
+          data-aos="zoom-in"
+          data-aos-duration="2000"
           style={{
             transform: `translateX(-${current * 100}%)`,
           }}
         >
           {slides.map((s) => {
-            return <img src={s} key={s} />;
+            return (
+              <img
+                src={s}
+                key={s}
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              />
+            );
           })}
         </div>
         {showButton && (
@@ -115,10 +124,10 @@ const Hero = () => {
                   }}
                   key={"circle" + i}
                   className={`rounded-full cursor-pointer ${
-                    i == current ? "w-5  h-5" : "w-2 h-2"
+                    i === current ? "w-5  h-5" : "w-2 h-2"
                   }`}
                   style={{
-                    background: i == current ? "white" : "gray",
+                    background: i === current ? "white" : "gray",
                   }}
                 ></div>
               );
