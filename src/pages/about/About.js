@@ -27,17 +27,17 @@ const About = () => {
     <div className="">
       <div className=" flex  justif-center flex-col items-center mt-2.5 w-full space-y-11">
         <div className="w-3/4 flex flex-col items-center">
-          <p className=" text-3xl font-bold text-themeColor-secondary">
+          <p className=" text-3xl font-bold text-themeColor-secondary xs:text-xl xs:text-center">
             Protecting Your Peace,
             <span className="text-themeColor-main"> Securing Your Trust</span>
           </p>
-          <p className="text-sm w-3/4 text-center mt-3">
+          <p className="text-sm w-3/4 text-center mt-3 xs:text-xs xs:w-11/12">
             Protecting what matters most is our passion, and we look forward to
             serving you with the highest level of professionalism and integrity
             at Karthik Security Services.
           </p>
         </div>
-        <div className="flex mt-10 space-x-11 ">
+        <div className="flex mt-10 space-x-11 xs:space-x-4  xs:px-5">
           {imgSet.map((item) => {
             return (
               <div key={item.id} className="">
@@ -51,7 +51,7 @@ const About = () => {
             );
           })}
         </div>
-        <button className="bg-themeColor-main text-white hover:bg-white hover:text-themeColor-main hover:border font-bold py-2 px-4 rounded-xl mt-10">
+        <button className="bg-themeColor-main text-white hover:bg-white hover:text-themeColor-main hover:border font-bold py-2 px-4 rounded-xl mt-10 xs:w-24 xs:h-7 xs:rounded-lg xs:text-xs">
           Read More
         </button>
       </div>

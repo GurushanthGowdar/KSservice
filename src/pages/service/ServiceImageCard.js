@@ -22,10 +22,10 @@ const ServiceImageCard = (props) => {
   return (
     <div
       key={props.item.id}
-      className="basis-1/4 flex ml-10 mr-10 mt-10 flex-1 cursor-pointer service-card "
+      className="basis-1/4 flex ml-10 mr-10 mt-10 flex-1 cursor-pointer service-card xs:ml-5 xs:mr-5 xs:mt-5"
       onMouseEnter={mouseEnterHandler}
       onMouseLeave={mouseLeaveHandler}
-      //   style={cardHoverStyles}
+    //   style={cardHoverStyles}
     >
       <img
         src={props.item.src}

@@ -45,7 +45,7 @@ const Hero = () => {
 
   return (
     <div
-      className="w-full h-[70vh]  m-auto "
+      className="w-full h-[70vh]  xs:h-full m-auto "
       onMouseEnter={mouseEnterHandler}
       onMouseLeave={mouseLeaveHandler}
     >
@@ -123,9 +123,8 @@ const Hero = () => {
                     setCurrent(i);
                   }}
                   key={"circle" + i}
-                  className={`rounded-full cursor-pointer ${
-                    i === current ? "w-5  h-5" : "w-2 h-2"
-                  }`}
+                  className={`rounded-full cursor-pointer ${i === current ? "w-5  h-5" : "w-2 h-2"
+                    }`}
                   style={{
                     background: i === current ? "white" : "gray",
                   }}

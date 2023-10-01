@@ -59,10 +59,10 @@ const Service = () => {
     <div className=" bg-services-main mt-10 pb-10">
       <div className=" flex  justif-center flex-col items-center mt-2.5 w-full space-y-11 ">
         <div className="w-3/4 flex flex-col items-center">
-          <p className=" text-3xl font-bold text-themeColor-secondary mt-5">
+          <p className=" text-3xl font-bold text-themeColor-secondary mt-5 xs:text-xl xs:text-center">
             Our<span className="text-themeColor-main"> Services</span>
           </p>
-          <p className="text-sm w-3/4 text-center mt-3">
+          <p className="text-sm w-3/4 text-center mt-3 xs:text-xs xs:w-11/12">
             We have immense pleasure in introducing ourselves as Security
             professionals for Guarding offices, Solar O&M,Road projects,National
             Highways,Factories,Hotels and industrial estates, and other
