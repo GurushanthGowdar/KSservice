@@ -32,7 +32,7 @@ const ServiceImageCard = (props) => {
         data-aos="zoom-in"
         data-aos-duration="1000"
         alt="hello"
-        className="w-full h-full xs:h-60 rounded-md"
+        className="w-full h-[43vh] xs:h-60 rounded-md"
       />
     </div>
   );

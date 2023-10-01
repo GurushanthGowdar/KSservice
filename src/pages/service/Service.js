@@ -1,6 +1,14 @@
 import React from "react";
 import img1 from "../../Image/service/entertainment and hospitality 1.png";
+import img2 from "../../Image/service/img13.jpeg";
 import img3 from "../../Image/service/img3.jpg";
+import img4 from "../../Image/service/img4.jpeg";
+import img5 from "../../Image/service/img5.jpg";
+import img6 from "../../Image/service/img6.jpeg";
+import img7 from "../../Image/service/img7.jpeg";
+import img8 from "../../Image/service/img8.jpeg";
+import img9 from "../../Image/service/img9.jpeg";
+
 import ServiceImageCard from "./ServiceImageCard";
 
 // import imgg from "./img1.png"
@@ -12,47 +20,35 @@ const Service = () => {
     },
     {
       id: 2,
-      src: img3,
+      src: img2,
     },
     {
       id: 3,
-      src: img1,
+      src: img3,
     },
     {
       id: 4,
-      src: img1,
+      src: img4,
     },
     {
       id: 5,
-      src: img1,
+      src: img5,
     },
     {
       id: 6,
-      src: img1,
+      src: img6,
     },
     {
       id: 7,
-      src: img1,
+      src: img7,
     },
     {
       id: 8,
-      src: img1,
+      src: img8,
     },
     {
       id: 9,
-      src: img1,
-    },
-    {
-      id: 12,
-      src: img1,
-    },
-    {
-      id: 10,
-      src: img1,
-    },
-    {
-      id: 11,
-      src: img1,
+      src: img9,
     },
   ];
   return (
