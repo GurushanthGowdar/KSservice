@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/KSservice/static/css/main.22f333a3.css",
-    "main.js": "/KSservice/static/js/main.00f0b44b.js",
+    "main.css": "/KSservice/static/css/main.138c9724.css",
+    "main.js": "/KSservice/static/js/main.e9b8bf4e.js",
     "static/media/entertainment and hospitality 1.png": "/KSservice/static/media/entertainment and hospitality 1.28c3d9982d94442464ac.png",
     "static/media/img3.jpg": "/KSservice/static/media/img3.5af23289a6a727c87e95.jpg",
     "static/media/customized solutions 1.png": "/KSservice/static/media/customized solutions 1.35f74edf3e50264623dc.png",
     "index.html": "/KSservice/index.html",
-    "main.22f333a3.css.map": "/KSservice/static/css/main.22f333a3.css.map",
-    "main.00f0b44b.js.map": "/KSservice/static/js/main.00f0b44b.js.map"
+    "main.138c9724.css.map": "/KSservice/static/css/main.138c9724.css.map",
+    "main.e9b8bf4e.js.map": "/KSservice/static/js/main.e9b8bf4e.js.map"
   },
   "entrypoints": [
-    "static/css/main.22f333a3.css",
-    "static/js/main.00f0b44b.js"
+    "static/css/main.138c9724.css",
+    "static/js/main.e9b8bf4e.js"
   ]
 }
